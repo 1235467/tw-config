@@ -3,8 +3,8 @@
 ## 使用
 
 ```bash
-sudo apt update && sudo apt upgrade
-sudo apt install p7zip vim 
+apt update && apt upgrade
+apt install p7zip vim 
 mkdir .ssh
 echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOOGBMAl2vE63UYNXq34wCtZSCNIJlS+wCzGLM3Gc3+X' >> .ssh/authorized_keys
 echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB/8HND6TZyJ0O5SeYmM94scroscIH39hB5J6qbvTXZD' >> .ssh/authorized_keys
