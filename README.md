@@ -7,4 +7,8 @@
 
 ```bash
 wget -O start --no-check-certificate https://raw.githubusercontent.com/1235467/tw-config/master/start && chmod +x ss-rust.sh && bash start
+
+Or 
+
+bash <(curl -L -s https://raw.githubusercontent.com/1235467/tw-config/master/start)  #not tested
 ```
