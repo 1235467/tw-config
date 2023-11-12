@@ -10,5 +10,5 @@ wget -O start --no-check-certificate https://raw.githubusercontent.com/1235467/t
 
 Or 
 
-bash <(curl -L -s https://raw.githubusercontent.com/1235467/tw-config/master/start)  #not tested
+bash <(curl -L -s https://raw.githubusercontent.com/1235467/tw-config/master/start) 
 ```
