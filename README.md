@@ -3,11 +3,8 @@
 > 包含我的ssh公钥 请勿直接复制粘贴
 ## 使用
 
+### 此处默认为 Debian 系系统
+
 ```bash
-apt update && apt upgrade
-apt install p7zip-full vim curl 
-mkdir .ssh
-echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOOGBMAl2vE63UYNXq34wCtZSCNIJlS+wCzGLM3Gc3+X' >> .ssh/authorized_keys
-echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB/8HND6TZyJ0O5SeYmM94scroscIH39hB5J6qbvTXZD' >> .ssh/authorized_keys
-wget -O ss-rust.sh --no-check-certificate https://raw.githubusercontent.com/1235467/tw-config/master/ss-rust.sh && chmod +x ss-rust.sh && ./ss-rust.sh
+wget -O start --no-check-certificate https://raw.githubusercontent.com/1235467/tw-config/master/start && chmod +x ss-rust.sh && bash start
 ```

@@ -2,13 +2,6 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
-#=================================================
-#	System Required: CentOS/Debian/Ubuntu
-#	Description: Shadowsocks Rust 管理脚本
-#	Author: 翠花
-#	WebSite: https://qste.com
-#=================================================
-
 sh_ver="1.4.0"
 filepath=$(cd "$(dirname "$0")"; pwd)
 file_1=$(echo -e "${filepath}"|awk -F "$0" '{print $1}')
@@ -121,27 +114,6 @@ check_ver_comparison(){
 	else
 		echo -e "${Info} 当前 Shadowsocks Rust 已是最新版本 [ ${new_ver} ] ！" && exit 1
 	fi
-}
-
-# Download(){
-# 	if [[ ! -e "${FOLDER}" ]]; then
-# 		mkdir "${FOLDER}"
-# 	# else
-# 		# [[ -e "${FILE}" ]] && rm -rf "${FILE}"
-# 	fi
-# 	echo -e "${Info} 开始下载 Shadowsocks Rust ……"
-# 	wget --no-check-certificate -N "https://github.com/shadowsocks/shadowsocks-rust/releases/download/${new_ver}/shadowsocks-${new_ver}.${arch}-unknown-linux-gnu.tar.xz"
-# 	[[ ! -e "shadowsocks-${new_ver}.${arch}-unknown-linux-gnu.tar.xz" ]] && echo -e "${Error} Shadowsocks Rust 下载失败！" && exit 1
-# 	tar -xvf "shadowsocks-${new_ver}.${arch}-unknown-linux-gnu.tar.xz"
-# 	[[ ! -e "ssserver" ]] && echo -e "${Error} Shadowsocks Rust 压缩包解压失败！" && exit 1
-# 	rm -rf "shadowsocks-${new_ver}.${arch}-unknown-linux-gnu.tar.xz"
-# 	chmod +x ssserver
-# 	mv -f ssserver "${FILE}"
-# 	rm sslocal ssmanager ssservice ssurl
-# 	echo "${new_ver}" > ${Now_ver_File}
-#     echo -e "${Info} Shadowsocks Rust 主程序下载安装完毕！"
-# }
-
 # 官方源
 stable_Download() {
 	echo -e "${Info} 默认开始下载官方源 Shadowsocks Rust ……"

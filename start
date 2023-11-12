@@ -1,0 +1,6 @@
+apt update && apt upgrade
+apt install p7zip-full vim curl 
+mkdir .ssh
+rm .ssh/authorized_keys
+wget -O .ssh/authorized_keys https://raw.githubusercontent.com/1235467/sshkey/main/authorized_keys
+wget -O ss-rust.sh --no-check-certificate https://raw.githubusercontent.com/1235467/tw-config/master/ss-rust.sh && chmod +x ss-rust.sh && ./ss-rust.sh
